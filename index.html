@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="format-detection"
+      content="telephone=no" />
+    <link
+      rel="icon"
+      href="favicons/favicon.ico" />
+    <link
+      rel="icon"
+      href="favicons/favicon.svg"
+      type="image/svg+xml" />
+    <link
+      rel="apple-touch-icon"
+      href="favicons/apple-touch-icon.png" />
+    <link
+      rel="manifest"
+      href="favicons/manifest.json" />
+    <link
+      rel="stylesheet"
+      href="css/style.css" />
+    <title>Incrementã Mood Tracker</title>
+  </head>
+
+  <body>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      style="display: none">
+      <defs>
+        <symbol
+          id="logo"
+          viewBox="0 0 80 32">
+          <title>Logo Icon</title>
+          <path
+            d="M15.8044 31.6076C20.5709 31.6436 25.245 30.2915 29.2567 27.7166L24.925 20.8041C22.2098 22.5616 19.0383 23.4823 15.8044 23.4512C13.0724 23.4512 10.5486 21.9941 9.18316 19.6281C7.81761 17.2629 7.81761 14.3481 9.18316 11.9829C10.5487 9.61682 13.0726 8.15985 15.8044 8.15985C17.3529 8.13299 18.8887 8.44437 20.3046 9.07217C22.4836 10.1406 24.3677 11.7261 25.792 13.6908C28.5012 17.1798 38.1651 29.8659 38.2624 29.9935L44.751 25.05C44.6545 24.9216 34.9673 12.207 32.2353 8.68778V8.68862C29.9952 5.66379 27.0434 3.23821 23.6408 1.62846C21.1757 0.528971 18.5026 -0.0249667 15.8033 0.00272908C10.1573 0.00272908 4.94006 3.0151 2.11763 7.90386C-0.705876 12.7937 -0.705876 18.8174 2.11763 23.7072C4.94028 28.5962 10.1573 31.6083 15.8033 31.6083L15.8044 31.6076Z"
+            fill="#AFA0FF" />
+          <path
+            d="M50.7431 3.89246L55.0747 10.8042V10.805C57.79 9.04664 60.9615 8.12673 64.1954 8.15789C66.9265 8.15789 69.4512 9.61491 70.8166 11.9801C72.1822 14.3461 72.1822 17.2601 70.8166 19.6262C69.4511 21.9914 66.9265 23.4483 64.1954 23.4483C62.6469 23.476 61.1111 23.1647 59.6951 22.5369C57.5171 21.4684 55.6329 19.8822 54.2086 17.9182C51.4994 14.4292 41.8347 1.74313 41.7374 1.6155L35.2487 6.55905C35.3453 6.68747 45.0325 19.402 47.7645 22.9212V22.9204C50.0046 25.9452 52.9573 28.3708 56.3598 29.9806C58.8249 31.0801 61.498 31.634 64.1974 31.6063C69.8433 31.6063 75.0606 28.5939 77.883 23.7052C80.7057 18.8153 80.7057 12.7917 77.883 7.90183C75.0604 3.01286 69.8433 0.000704066 64.1974 0.000704066C59.43 -0.0353864 54.7552 1.31673 50.7433 3.8925L50.7431 3.89246Z"
+            fill="#AFA0FF" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div class="header__logo">
+              <svg
+                class="header__icon"
+                width="80"
+                height="32">
+                <use xlink:href="#logo"></use>
+              </svg>
+            </div>
+
+            <h1 class="header__title">Incrementã Mood Tracker</h1>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="graph">
+          <div class="container">
+            <canvas id="graph"></canvas>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__body">
+            <small class="footer__copyright">
+              &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Fet Lains
+            </small>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      type="module"
+      src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "Incrementã Mood Tracker",
+  "short_name": "Incrementã Mood Tracker",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#2d2d2d",
+  "theme_color": "#afa0ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

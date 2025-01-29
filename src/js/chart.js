@@ -77,6 +77,8 @@ export const getChartConfig = (data) => ({
       },
     },
     color: CHART_COLOR,
+    responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       tooltip: {
         callbacks: {

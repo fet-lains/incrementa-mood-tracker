@@ -55,7 +55,7 @@ body,
 }
 
 body {
-  min-width: 320px;
+  min-width: 3.2rem;
   display: flex;
   justify-content: center;
   font-family: var(--font-primary);
@@ -75,7 +75,7 @@ body {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 30px;
+  padding: 0 3rem;
 }
 
 .wrapper {
@@ -91,7 +91,7 @@ body {
   justify-content: space-between;
   column-gap: 3rem;
   padding: 2rem 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 0.1rem solid var(--border);
 }
 .header__title {
   font-size: 3rem;
@@ -104,10 +104,22 @@ body {
   flex-grow: 1;
 }
 
+.graph__wrapper {
+  height: 100vh;
+  overflow-x: auto;
+  position: relative;
+}
+
 .footer__body {
   padding: 2rem 0;
-  border-top: 1px solid var(--border);
+  border-top: 0.1rem solid var(--border);
 }
 .footer__copyright {
   font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 2rem;
+  }
 }

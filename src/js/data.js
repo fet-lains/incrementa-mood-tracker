@@ -8,6 +8,7 @@ export const data = [
     fatigue: 30,
     negativeThoughts: 30,
     gutConcerns: 70,
+    weight: 63.8,
   },
   {
     week: 2,
@@ -18,6 +19,7 @@ export const data = [
     fatigue: 30,
     negativeThoughts: 28,
     gutConcerns: 67,
+    weight: 63.7,
   },
   {
     week: 3,
@@ -28,6 +30,7 @@ export const data = [
     fatigue: 28,
     negativeThoughts: 27,
     gutConcerns: 65,
+    weight: 62.7,
   },
   {
     week: 4,
@@ -38,6 +41,7 @@ export const data = [
     fatigue: 24,
     negativeThoughts: 15,
     gutConcerns: 35,
+    weight: 63,
   },
   {
     week: 5,
@@ -48,6 +52,7 @@ export const data = [
     fatigue: 26,
     negativeThoughts: 17,
     gutConcerns: 40,
+    weight: 64.8,
   },
   {
     week: 6,
@@ -58,6 +63,7 @@ export const data = [
     fatigue: 2,
     negativeThoughts: 2,
     gutConcerns: 10,
+    weight: 66.7,
   },
   {
     week: 7,
@@ -68,6 +74,7 @@ export const data = [
     fatigue: 2,
     negativeThoughts: 1,
     gutConcerns: 8,
+    weight: 67.8,
   },
   {
     week: 8,
@@ -78,6 +85,7 @@ export const data = [
     fatigue: 1,
     negativeThoughts: 1,
     gutConcerns: 10,
+    weight: 68.2,
   },
   {
     week: 9,
@@ -88,6 +96,7 @@ export const data = [
     fatigue: 5,
     negativeThoughts: 5,
     gutConcerns: 20,
+    weight: 69.3,
   },
   {
     week: 10,
@@ -98,6 +107,7 @@ export const data = [
     fatigue: 3,
     negativeThoughts: 5,
     gutConcerns: 17,
+    weight: 69.9,
   },
   {
     week: 11,
@@ -108,6 +118,7 @@ export const data = [
     fatigue: 5,
     negativeThoughts: 10,
     gutConcerns: 25,
+    weight: 68.9,
   },
   {
     week: 12,
@@ -118,6 +129,7 @@ export const data = [
     fatigue: 3,
     negativeThoughts: 6,
     gutConcerns: 22,
+    weight: 68.7,
   },
   {
     week: 13,
@@ -128,6 +140,7 @@ export const data = [
     fatigue: 4,
     negativeThoughts: 4,
     gutConcerns: 15,
+    weight: 68.4,
   },
   {
     week: 14,
@@ -138,6 +151,7 @@ export const data = [
     fatigue: 2,
     negativeThoughts: 2,
     gutConcerns: 12,
+    weight: 69,
   },
   {
     week: 15,
@@ -148,6 +162,7 @@ export const data = [
     fatigue: 3,
     negativeThoughts: 3,
     gutConcerns: 15,
+    weight: 68,
   },
   {
     week: 16,
@@ -158,6 +173,7 @@ export const data = [
     fatigue: 4,
     negativeThoughts: 2,
     gutConcerns: 14,
+    weight: 68.2,
   },
   {
     week: 17,
@@ -168,6 +184,7 @@ export const data = [
     fatigue: 3,
     negativeThoughts: 3,
     gutConcerns: 15,
+    weight: 67.7,
   },
   {
     week: 18,
@@ -178,6 +195,7 @@ export const data = [
     fatigue: 1,
     negativeThoughts: 1,
     gutConcerns: 12,
+    weight: 67.2,
   },
   {
     week: 19,
@@ -188,6 +206,7 @@ export const data = [
     fatigue: 2,
     negativeThoughts: 1,
     gutConcerns: 12,
+    weight: 68,
   },
   {
     week: 20,
@@ -198,6 +217,7 @@ export const data = [
     fatigue: 2,
     negativeThoughts: 0,
     gutConcerns: 10,
+    weight: 67.8,
   },
   {
     week: 21,
@@ -208,6 +228,7 @@ export const data = [
     fatigue: 1,
     negativeThoughts: 1,
     gutConcerns: 15,
+    weight: 67.7,
   },
   {
     week: 22,
@@ -218,6 +239,7 @@ export const data = [
     fatigue: 2,
     negativeThoughts: 1,
     gutConcerns: 17,
+    weight: 67.3,
   },
   {
     week: 22,
@@ -228,5 +250,6 @@ export const data = [
     fatigue: 0,
     negativeThoughts: 0,
     gutConcerns: 16,
+    weight: 66.8,
   },
 ];

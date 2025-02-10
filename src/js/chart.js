@@ -39,15 +39,17 @@ const DATASET_COLORS = {
   FATIGUE: '#ffb091',
   NEGATIVE_THOUGHTS: '#ffd36f',
   GUT_CONCERNS: '#cfa0ff',
+  WEIGHT: '#00eabf',
 };
 
 const DATASET_LABELS = {
-  SLEEP_QUALITY: 'Качество сна',
+  SLEEP_QUALITY: 'Сон',
   ANXIETY: 'Тревожность',
   DEPRESSION: 'Подавленность',
   FATIGUE: 'Утомляемость',
-  NEGATIVE_THOUGHTS: 'Негативные переживания',
+  NEGATIVE_THOUGHTS: 'Пессимизм',
   GUT_CONCERNS: 'Озабоченность ЖКТ',
+  WEIGHT: 'Вес',
 };
 
 const DATASET_KEYS = {
@@ -57,6 +59,7 @@ const DATASET_KEYS = {
   FATIGUE: 'fatigue',
   NEGATIVE_THOUGHTS: 'negativeThoughts',
   GUT_CONCERNS: 'gutConcerns',
+  WEIGHT: 'weight',
 };
 
 export const getChartConfig = (data) => ({
@@ -84,6 +87,7 @@ export const getChartConfig = (data) => ({
         callbacks: {
           title: getTooltipTitle,
           beforeBody: getTooltipBeforeBody(data),
+          label: getCustomLabel,
         },
       },
     },
@@ -128,6 +132,18 @@ const getTooltipBeforeBody = (data) => (tooltipItems) => {
   }
 
   return data[dataIndex]?.meds ?? '';
+};
+
+const getCustomLabel = (context) => {
+  let label = context.dataset.label || '';
+
+  if (label) {
+    label += ': ';
+  }
+  if (context.parsed.y !== null) {
+    label += `${context.parsed.y}%`;
+  }
+  return label;
 };
 
 export const setupChartDefaults = () => {

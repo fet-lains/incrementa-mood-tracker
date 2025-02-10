@@ -82,7 +82,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  row-gap: 3rem;
+  row-gap: 1rem;
 }
 
 .header__body {
@@ -105,7 +105,7 @@ body {
 }
 
 .graph__wrapper {
-  height: 100vh;
+  height: calc(100vh - 7.6rem - 5.75rem - 2rem);
   overflow-x: auto;
   position: relative;
 }

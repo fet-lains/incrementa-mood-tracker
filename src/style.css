@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+svg {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
 html,
 body {
   -ms-text-size-adjust: 100%;
@@ -17,45 +22,41 @@ body {
 }
 
 :root {
-  font-size: 10px;
-
   /* variables */
   /* fonts */
+  --font-size: 10px;
   --font-primary: 'Roboto', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
 
   /* colors */
   --alabaster: #fbfbfb;
-  --alto: #cfcfcf;
   --carnation-pink: #ff9abf;
   --cornflower-blue: #599ff4;
-  --dove-gray: #6b6b6b;
-  --dusty-gray: #959595;
   --festival: #f9f871;
   --goldenrod: #ffd36f;
-  --lavender-rose: #fd98e9;
   --mauve: #cfa0ff;
   --mine-shaft: #2d2d2d;
   --mona-lisa: #ffb091;
+  --robin-egg-blue: #00eabf;
 
   /* color scheme */
   --text-primary: var(--alabaster);
-  --text-secondary: var(--alto);
   --background: var(--mine-shaft);
   --theme-color: var(--melrose);
+  --border: var(--alabaster);
 
   /* Transitions */
   --anim-slow: 0.3s ease-in-out;
   --anim-fast: 0.2s ease-in-out;
-}
 
-html,
-body,
-.wrapper {
-  height: 100%;
+  /* Gaps */
+  --layout-gap: 2rem;
+
+  font-size: var(--font-size);
 }
 
 body {
-  min-width: 3.2rem;
+  min-width: 3.75rem;
+  height: 100vh;
   display: flex;
   justify-content: center;
   font-family: var(--font-primary);
@@ -68,6 +69,7 @@ body {
   user-select: none;
   color: var(--text-primary);
   background-color: var(--background);
+  overflow: hidden;
 }
 
 .container {
@@ -82,7 +84,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  row-gap: 1rem;
+  row-gap: var(--layout-gap);
 }
 
 .header__body {
@@ -93,8 +95,11 @@ body {
   padding: 2rem 0;
   border-bottom: 0.1rem solid var(--border);
 }
+.header__logo {
+  max-width: 6rem;
+}
 .header__title {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: 500;
   line-height: 1.2;
   color: var(--text-primary);
@@ -104,9 +109,12 @@ body {
   flex-grow: 1;
 }
 
-.graph__wrapper {
-  height: calc(100vh - 7.6rem - 5.75rem - 2rem);
+.graph__scrollable {
   overflow-x: auto;
+}
+.graph__wrapper {
+  height: calc(100vh - var(--secondary-elements-height));
+  min-width: var(--canvas-wrapper-width);
   position: relative;
 }
 
@@ -118,8 +126,24 @@ body {
   font-size: 1.5rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
+  :root {
+    --layout-gap: 1rem;
+  }
+
   .container {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
+  }
+  .header__body {
+    padding: 1rem 0;
+  }
+  .header__logo {
+    max-width: 4rem;
+  }
+  .header__title {
+    font-size: 2rem;
+  }
+  .footer__body {
+    padding: 1.5rem 0;
   }
 }

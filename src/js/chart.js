@@ -10,16 +10,6 @@ import {
   Tooltip,
 } from 'chart.js';
 
-Chart.register(
-  LineController,
-  LineElement,
-  PointElement,
-  CategoryScale,
-  LinearScale,
-  Legend,
-  Tooltip,
-);
-
 // chart general settings
 const CHART_FONT_FAMILY = getRootVariableValue('--font-primary');
 const CHART_FONT_SIZE = 17;
@@ -68,6 +58,16 @@ const DATASET_KEYS = {
   SLEEP_QUALITY: 'sleepQuality',
   WEIGHT: 'weight',
 };
+
+Chart.register(
+  LineController,
+  LineElement,
+  PointElement,
+  CategoryScale,
+  LinearScale,
+  Legend,
+  Tooltip,
+);
 
 export const getChartConfig = (data) => ({
   type: 'line',

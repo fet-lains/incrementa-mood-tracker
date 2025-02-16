@@ -242,7 +242,7 @@ export const data = [
     weight: 67.3,
   },
   {
-    week: 22,
+    week: 23,
     meds: 'Элицея 20 мг сут. + строгая FODMAP диета',
     sleepQuality: 70,
     anxiety: 0,
@@ -251,5 +251,16 @@ export const data = [
     negativeThoughts: 0,
     gutConcerns: 16,
     weight: 66.8,
+  },
+  {
+    week: 24,
+    meds: 'Элицея 20 мг сут. + строгая FODMAP диета',
+    sleepQuality: 75,
+    anxiety: 0,
+    depression: 0,
+    fatigue: 0,
+    negativeThoughts: 1,
+    gutConcerns: 15,
+    weight: 66.5,
   },
 ];

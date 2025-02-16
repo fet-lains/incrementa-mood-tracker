@@ -1,3 +1,4 @@
+/* base styles reset */
 * {
   padding: 0;
   margin: 0;
@@ -19,10 +20,12 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+
+  height: 100%;
 }
 
+/* variables & base settings */
 :root {
-  /* variables */
   /* fonts */
   --font-size: 10px;
   --font-primary: 'Roboto', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
@@ -44,21 +47,19 @@ body {
   --theme-color: var(--melrose);
   --border: var(--alabaster);
 
-  /* Transitions */
+  /* transitions */
   --anim-slow: 0.3s ease-in-out;
   --anim-fast: 0.2s ease-in-out;
 
-  /* Gaps */
+  /* gaps */
   --layout-gap: 2rem;
 
   font-size: var(--font-size);
 }
 
+/* general styles */
 body {
   min-width: 3.75rem;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
   font-family: var(--font-primary);
   font-size: 1.6rem;
   font-style: normal;
@@ -69,6 +70,15 @@ body {
   user-select: none;
   color: var(--text-primary);
   background-color: var(--background);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  height: min(100vh, 100dvh);
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--layout-gap);
   overflow: hidden;
 }
 
@@ -78,13 +88,6 @@ body {
   margin-right: auto;
   margin-left: auto;
   padding: 0 3rem;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  row-gap: var(--layout-gap);
 }
 
 .header__body {

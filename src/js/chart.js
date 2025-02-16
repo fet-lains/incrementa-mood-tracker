@@ -19,46 +19,53 @@ Chart.register(
   Tooltip,
 );
 
-const CHART_FONT_FAMILY =
-  "'Roboto', Helvetica, 'Trebuchet MS', Tahoma, sans-serif";
+const root = document.documentElement;
+const rootStyles = getComputedStyle(root);
+
+// chart general settings
+const CHART_FONT_FAMILY = rootStyles.getPropertyValue('--font-primary').trim();
 const CHART_FONT_SIZE = 17;
 const POINT_RADIUS = 4;
 const POINT_HOVER_RADIUS = 5;
 const LINE_TENSION = 0.3;
 const LEGEND_BOX_WIDTH = 20;
 const LEGEND_PADDING = 25;
-const LEGEND_BORDER_RADIUS = 9;
+const LEGEND_BORDER_RADIUS = 8;
 
-const CHART_COLOR = '#fbfbfb';
-const TOOLTIP_BACKGROUND_COLOR = '#6b6b6b';
-
+// chart colors
+const CHART_COLORS = {
+  FONT_COLOR: rootStyles.getPropertyValue('--text-primary').trim(),
+  TOOLTIP_BACKGROUND_COLOR: rootStyles
+    .getPropertyValue('--tooltip-background')
+    .trim(),
+};
 const DATASET_COLORS = {
-  SLEEP_QUALITY: '#599ff4',
-  ANXIETY: '#ff9abf',
-  DEPRESSION: '#f9f871',
-  FATIGUE: '#ffb091',
-  NEGATIVE_THOUGHTS: '#ffd36f',
-  GUT_CONCERNS: '#cfa0ff',
-  WEIGHT: '#00eabf',
+  ANXIETY: rootStyles.getPropertyValue('--anxiety').trim(),
+  DEPRESSION: rootStyles.getPropertyValue('--depression').trim(),
+  FATIGUE: rootStyles.getPropertyValue('--fatigue').trim(),
+  GUT_CONCERNS: rootStyles.getPropertyValue('--gut-concerns').trim(),
+  NEGATIVE_THOUGHTS: rootStyles.getPropertyValue('--negative-thoughts').trim(),
+  SLEEP_QUALITY: rootStyles.getPropertyValue('--sleep-quality').trim(),
+  WEIGHT: rootStyles.getPropertyValue('--weight').trim(),
 };
 
 const DATASET_LABELS = {
-  SLEEP_QUALITY: 'Сон',
   ANXIETY: 'Тревожность',
   DEPRESSION: 'Подавленность',
   FATIGUE: 'Утомляемость',
-  NEGATIVE_THOUGHTS: 'Пессимизм',
   GUT_CONCERNS: 'Озабоченность ЖКТ',
+  NEGATIVE_THOUGHTS: 'Пессимизм',
+  SLEEP_QUALITY: 'Сон',
   WEIGHT: 'Вес',
 };
 
 const DATASET_KEYS = {
-  SLEEP_QUALITY: 'sleepQuality',
   ANXIETY: 'anxiety',
   DEPRESSION: 'depression',
   FATIGUE: 'fatigue',
-  NEGATIVE_THOUGHTS: 'negativeThoughts',
   GUT_CONCERNS: 'gutConcerns',
+  NEGATIVE_THOUGHTS: 'negativeThoughts',
+  SLEEP_QUALITY: 'sleepQuality',
   WEIGHT: 'weight',
 };
 
@@ -79,7 +86,7 @@ export const getChartConfig = (data) => ({
         },
       },
     },
-    color: CHART_COLOR,
+    color: CHART_COLORS.FONT_COLOR,
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
@@ -156,5 +163,6 @@ export const setupChartDefaults = () => {
   Chart.defaults.plugins.legend.labels.padding = LEGEND_PADDING;
   Chart.defaults.plugins.legend.labels.useBorderRadius = true;
   Chart.defaults.plugins.legend.labels.borderRadius = LEGEND_BORDER_RADIUS;
-  Chart.defaults.plugins.tooltip.backgroundColor = TOOLTIP_BACKGROUND_COLOR;
+  Chart.defaults.plugins.tooltip.backgroundColor =
+    CHART_COLORS.TOOLTIP_BACKGROUND_COLOR;
 };

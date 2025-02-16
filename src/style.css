@@ -32,20 +32,23 @@ body {
 
   /* colors */
   --alabaster: #fbfbfb;
-  --carnation-pink: #ff9abf;
-  --cornflower-blue: #599ff4;
-  --festival: #f9f871;
-  --goldenrod: #ffd36f;
-  --mauve: #cfa0ff;
+  --alto: #cfcfcf;
   --mine-shaft: #2d2d2d;
-  --mona-lisa: #ffb091;
-  --robin-egg-blue: #00eabf;
+  --tooltip-background: #6b6b6b;
+
+  /* graph dataset colors */
+  --anxiety: #ff9abf;
+  --depression: #f9f871;
+  --fatigue: #ffb091;
+  --gut-concerns: #cfa0ff;
+  --negative-thoughts: #ffd36f;
+  --sleep-quality: #599ff4;
+  --weight: #00eabf;
 
   /* color scheme */
-  --text-primary: var(--alabaster);
   --background: var(--mine-shaft);
-  --theme-color: var(--melrose);
-  --border: var(--alabaster);
+  --border: var(--alto);
+  --text-primary: var(--alabaster);
 
   /* transitions */
   --anim-slow: 0.3s ease-in-out;
@@ -122,7 +125,7 @@ body {
 }
 
 .footer__body {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   border-top: 0.1rem solid var(--border);
 }
 .footer__copyright {
@@ -147,6 +150,6 @@ body {
     font-size: 2rem;
   }
   .footer__body {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   }
 }

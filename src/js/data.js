@@ -144,7 +144,7 @@ export const data = [
   },
   {
     week: 14,
-    meds: 'Элицея 20 мг сут. + Нольпаза 80 мг сут. + FODMAP диета',
+    meds: 'Элицея 20 мг сут. + Нольпаза 80 мг сут. + FODMAP диета (80%)',
     sleepQuality: 90,
     anxiety: 1,
     depression: 1,
@@ -155,7 +155,7 @@ export const data = [
   },
   {
     week: 15,
-    meds: 'Элицея 20 мг сут. + Нольпаза 80 мг сут. + FODMAP диета',
+    meds: 'Элицея 20 мг сут. + Нольпаза 80 мг сут. + FODMAP диета (82%)',
     sleepQuality: 80,
     anxiety: 1,
     depression: 2,
@@ -166,7 +166,7 @@ export const data = [
   },
   {
     week: 16,
-    meds: 'Элицея 20 мг сут. + Нольпаза 80 мг сут. + FODMAP диета',
+    meds: 'Элицея 20 мг сут. + Нольпаза 80 мг сут. + FODMAP диета (84%)',
     sleepQuality: 75,
     anxiety: 1,
     depression: 1,
@@ -177,7 +177,7 @@ export const data = [
   },
   {
     week: 17,
-    meds: 'Элицея 20 мг сут. + Нольпаза 80 мг сут. + FODMAP диета',
+    meds: 'Элицея 20 мг сут. + Нольпаза 80 мг сут. + FODMAP диета (85%)',
     sleepQuality: 80,
     anxiety: 2,
     depression: 1,
@@ -188,7 +188,7 @@ export const data = [
   },
   {
     week: 18,
-    meds: 'Элицея 20 мг сут. + Нольпаза 80 мг сут. + FODMAP диета',
+    meds: 'Элицея 20 мг сут. + Нольпаза 80 мг сут. + FODMAP диета (85%)',
     sleepQuality: 80,
     anxiety: 0,
     depression: 0,
@@ -199,7 +199,7 @@ export const data = [
   },
   {
     week: 19,
-    meds: 'Элицея 20 мг сут. + Нольпаза 80 мг сут. + FODMAP диета',
+    meds: 'Элицея 20 мг сут. + Нольпаза 80 мг сут. + FODMAP диета (85%)',
     sleepQuality: 70,
     anxiety: 1,
     depression: 0,
@@ -210,7 +210,7 @@ export const data = [
   },
   {
     week: 20,
-    meds: 'Элицея 20 мг сут. + Нольпаза 80 мг сут. + FODMAP диета',
+    meds: 'Элицея 20 мг сут. + Нольпаза 80 мг сут. + FODMAP диета (85%)',
     sleepQuality: 75,
     anxiety: 1,
     depression: 1,
@@ -221,7 +221,7 @@ export const data = [
   },
   {
     week: 21,
-    meds: 'Элицея 20 мг сут. + Нольпаза 40 мг сут. + FODMAP диета',
+    meds: 'Элицея 20 мг сут. + Нольпаза 40 мг сут. + FODMAP диета (85%)',
     sleepQuality: 70,
     anxiety: 1,
     depression: 0,
@@ -232,7 +232,7 @@ export const data = [
   },
   {
     week: 22,
-    meds: 'Элицея 20 мг сут. + FODMAP диета',
+    meds: 'Элицея 20 мг сут. + FODMAP диета (90%)',
     sleepQuality: 65,
     anxiety: 1,
     depression: 1,
@@ -243,7 +243,7 @@ export const data = [
   },
   {
     week: 23,
-    meds: 'Элицея 20 мг сут. + строгая FODMAP диета',
+    meds: 'Элицея 20 мг сут. + FODMAP диета (95%)',
     sleepQuality: 70,
     anxiety: 0,
     depression: 0,
@@ -254,7 +254,7 @@ export const data = [
   },
   {
     week: 24,
-    meds: 'Элицея 20 мг сут. + строгая FODMAP диета',
+    meds: 'Элицея 20 мг сут. + FODMAP диета (97%)',
     sleepQuality: 75,
     anxiety: 0,
     depression: 0,

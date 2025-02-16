@@ -35,15 +35,19 @@ const CHART_COLORS = {
   COLOR_FONT: getRootVariableValue('--text-primary'),
   COLOR_TOOLTIP_BACKGROUND: getRootVariableValue('--color-tooltip-background'),
 };
-const DATASET_COLORS = {
-  ANXIETY: getRootVariableValue('--chart-dataset-color-1'),
-  DEPRESSION: getRootVariableValue('--chart-dataset-color-2'),
-  FATIGUE: getRootVariableValue('--chart-dataset-color-3'),
-  GUT_CONCERNS: getRootVariableValue('--chart-dataset-color-4'),
-  NEGATIVE_THOUGHTS: getRootVariableValue('--chart-dataset-color-5'),
-  SLEEP_QUALITY: getRootVariableValue('--chart-dataset-color-6'),
-  WEIGHT: getRootVariableValue('--chart-dataset-color-7'),
-};
+const DATASET_COLOR_NAMES = [
+  'ANXIETY',
+  'DEPRESSION',
+  'FATIGUE',
+  'GUT_CONCERNS',
+  'NEGATIVE_THOUGHTS',
+  'SLEEP_QUALITY',
+  'WEIGHT',
+];
+const DATASET_COLORS = DATASET_COLOR_NAMES.reduce((acc, name, index) => {
+  acc[name] = getRootVariableValue(`--chart-dataset-color-${index + 1}`);
+  return acc;
+}, {});
 
 const DATASET_LABELS = {
   ANXIETY: 'Тревожность',

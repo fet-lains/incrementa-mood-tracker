@@ -31,24 +31,24 @@ body {
   --font-primary: 'Roboto', Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
 
   /* colors */
-  --alabaster: #fbfbfb;
-  --alto: #cfcfcf;
-  --mine-shaft: #2d2d2d;
-  --tooltip-background: #6b6b6b;
+  --color-alabaster: #fbfbfb;
+  --color-alto: #cfcfcf;
+  --color-mine-shaft: #2d2d2d;
+  --color-tooltip-background: #6b6b6b;
 
   /* graph dataset colors */
-  --anxiety: #ff9abf;
-  --depression: #f9f871;
-  --fatigue: #ffb091;
-  --gut-concerns: #cfa0ff;
-  --negative-thoughts: #ffd36f;
-  --sleep-quality: #599ff4;
-  --weight: #00eabf;
+  --chart-dataset-color-1: #ff9abf;
+  --chart-dataset-color-2: #f9f871;
+  --chart-dataset-color-3: #ffb091;
+  --chart-dataset-color-4: #cfa0ff;
+  --chart-dataset-color-5: #ffd36f;
+  --chart-dataset-color-6: #599ff4;
+  --chart-dataset-color-7: #00eabf;
 
   /* color scheme */
-  --background: var(--mine-shaft);
-  --border: var(--alto);
-  --text-primary: var(--alabaster);
+  --background: var(--color-mine-shaft);
+  --border: var(--color-alto);
+  --text-primary: var(--color-alabaster);
 
   /* transitions */
   --anim-slow: 0.3s ease-in-out;

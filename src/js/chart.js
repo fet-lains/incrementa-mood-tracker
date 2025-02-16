@@ -1,3 +1,4 @@
+import getRootVariableValue from './utils/getRootVariableValue';
 import {
   Chart,
   LineController,
@@ -19,11 +20,8 @@ Chart.register(
   Tooltip,
 );
 
-const root = document.documentElement;
-const rootStyles = getComputedStyle(root);
-
 // chart general settings
-const CHART_FONT_FAMILY = rootStyles.getPropertyValue('--font-primary').trim();
+const CHART_FONT_FAMILY = getRootVariableValue('--font-primary');
 const CHART_FONT_SIZE = 17;
 const POINT_RADIUS = 4;
 const POINT_HOVER_RADIUS = 5;
@@ -34,19 +32,17 @@ const LEGEND_BORDER_RADIUS = 8;
 
 // chart colors
 const CHART_COLORS = {
-  FONT_COLOR: rootStyles.getPropertyValue('--text-primary').trim(),
-  TOOLTIP_BACKGROUND_COLOR: rootStyles
-    .getPropertyValue('--tooltip-background')
-    .trim(),
+  COLOR_FONT: getRootVariableValue('--text-primary'),
+  COLOR_TOOLTIP_BACKGROUND: getRootVariableValue('--color-tooltip-background'),
 };
 const DATASET_COLORS = {
-  ANXIETY: rootStyles.getPropertyValue('--anxiety').trim(),
-  DEPRESSION: rootStyles.getPropertyValue('--depression').trim(),
-  FATIGUE: rootStyles.getPropertyValue('--fatigue').trim(),
-  GUT_CONCERNS: rootStyles.getPropertyValue('--gut-concerns').trim(),
-  NEGATIVE_THOUGHTS: rootStyles.getPropertyValue('--negative-thoughts').trim(),
-  SLEEP_QUALITY: rootStyles.getPropertyValue('--sleep-quality').trim(),
-  WEIGHT: rootStyles.getPropertyValue('--weight').trim(),
+  ANXIETY: getRootVariableValue('--chart-dataset-color-1'),
+  DEPRESSION: getRootVariableValue('--chart-dataset-color-2'),
+  FATIGUE: getRootVariableValue('--chart-dataset-color-3'),
+  GUT_CONCERNS: getRootVariableValue('--chart-dataset-color-4'),
+  NEGATIVE_THOUGHTS: getRootVariableValue('--chart-dataset-color-5'),
+  SLEEP_QUALITY: getRootVariableValue('--chart-dataset-color-6'),
+  WEIGHT: getRootVariableValue('--chart-dataset-color-7'),
 };
 
 const DATASET_LABELS = {
@@ -86,7 +82,7 @@ export const getChartConfig = (data) => ({
         },
       },
     },
-    color: CHART_COLORS.FONT_COLOR,
+    color: CHART_COLORS.COLOR_FONT,
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
@@ -164,5 +160,5 @@ export const setupChartDefaults = () => {
   Chart.defaults.plugins.legend.labels.useBorderRadius = true;
   Chart.defaults.plugins.legend.labels.borderRadius = LEGEND_BORDER_RADIUS;
   Chart.defaults.plugins.tooltip.backgroundColor =
-    CHART_COLORS.TOOLTIP_BACKGROUND_COLOR;
+    CHART_COLORS.COLOR_TOOLTIP_BACKGROUND;
 };

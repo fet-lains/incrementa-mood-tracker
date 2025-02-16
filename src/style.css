@@ -119,7 +119,8 @@ body {
   overflow-x: auto;
 }
 .graph__wrapper {
-  height: calc(100vh - var(--secondary-elements-height));
+  height: calc(100% - var(--secondary-elements-height));
+  height: calc(100dvh - var(--secondary-elements-height));
   min-width: var(--canvas-wrapper-width);
   position: relative;
 }
